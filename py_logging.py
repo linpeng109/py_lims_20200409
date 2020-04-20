@@ -27,7 +27,7 @@ class LoggerFactory():
         logger.addHandler(fileHandler)
         logger.addHandler(streamHandler)
         # 设置日志等级
-        logger.setLevel(config.getint('default', 'logger_level'))
+        logger.setLevel(self.config.getint('default', 'logger_level'))
         return logger
 
 

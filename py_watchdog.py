@@ -38,7 +38,7 @@ class WatchDogObServer():
                                                     ignore_directories=ignore_directories,
                                                     case_sensitive=case_sensitive)
         event_handler.on_created = self.on_created
-        event_handler.on_modified = self.on_modified
+        # event_handler.on_modified = self.on_modified
 
         observer = Observer()
         observer.schedule(path=path, event_handler=event_handler, recursive=recursive)
